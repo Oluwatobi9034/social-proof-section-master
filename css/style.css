@@ -18,6 +18,11 @@ body {
 
     background-color: var(--White);
     line-height: 1.5rem;
+    font-size: .9375rem;
+
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 2vw top 0vh,left 27vw top 200vh;
 
     display: flex;
     justify-content: center;
@@ -25,19 +30,22 @@ body {
 }
 
 .container {
-    max-width: 560px;
-    width: 90%;
-    margin: 3em auto;
+    max-width: 650px;
+    width: 80%;
+    margin: 5em auto;
 }
 
-header {
-    text-align: center;
+header .header-content {
     margin-bottom: 3em;
+    text-align: center;
 }
 
-.head-paragraph {
-    font-size: .875rem;
-    margin: 2em 0;
+header .header-content h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 2.5rem;
+    max-width: 300px;
+    line-height: 3rem;
+    margin: 0  auto 2rem;
 }
 
 header .star-icon{
@@ -61,9 +69,15 @@ section article {
 .article-header {
     display: flex;
     margin-bottom: 1em;
+    gap: 1em;
+} 
+
+.article-header p{
+    align-self: center;
 }
 
-.Verified-buyer {
+.article-header .Verified-buyer {
+    display: block;
     color: var(--Soft-Pink);
 }
 
@@ -72,49 +86,45 @@ section article {
     border-radius: 50%;
 }
 
-
-
-/* @media only screen and (min-width: 760px) {
-    .container {
-        max-width: 700px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+@media only screen and (min-width: 1100px) {
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: right 140vh top 0, left 20vw top 25vh;
     }
-}*/
 
-@media only screen and (min-width: 960px) {
     .container {
         max-width: 1440px;
-        width: 95%;
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
 
     header {
-        text-align: left;
         display: flex;
         justify-content: space-between;
     }
 
-    header div h1 {
-        max-width: 300px;
-        font-size: xx-large;
-        line-height: 2rem;
+    header .header-content {
+        text-align: left;
+    }
+    
+    header .header-content h1 {
+        margin: 0  0 2rem;
     }
 
-    header div .head-paragraph {
-        max-width: 350px;
+    header .header-content p {
+        max-width: 450px;
     }
+    
 
     .star-icon div {
-        margin-right: 12px;
+        margin-right: .75em;
     }
 
     .star-icon {
         display: flex;
-        gap: 8px;
+        gap: .5em;
     }
 
     .star-icon1 {
