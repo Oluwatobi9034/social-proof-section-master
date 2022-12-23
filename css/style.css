@@ -57,7 +57,7 @@ header .star-icon{
     font-weight: 700;
 }
 
-section article {
+section figure {
     background-color: var(--Very-Dark-Magenta);
     color: hsla(300, 24%, 96%, 0.8);
     padding: 2em;
@@ -66,22 +66,22 @@ section article {
     font-weight: 500;
 }
 
-.article-header {
+.figure-header {
     display: flex;
     margin-bottom: 1em;
     gap: 1em;
 } 
 
-.article-header p{
+.fugure-header p{
     align-self: center;
 }
 
-.article-header .Verified-buyer {
+.figure-header .Verified-buyer {
     display: block;
     color: var(--Soft-Pink);
 }
 
-.article-header img {
+.figure-header img {
     max-width: 70%;
     border-radius: 50%;
 }
@@ -145,15 +145,15 @@ section article {
         gap: 1.5em;
     }
 
-    .first-article {
+    .first-figure {
         margin-bottom: 3em;
     }
 
-    .second-article {
+    .second-figure {
         margin: 1.5em 0 2em 0;
     }
 
-    .third-article {
+    .third-figure {
         margin-top: 3em;
     }
 }
