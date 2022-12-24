@@ -72,7 +72,7 @@ section figure {
     gap: 1em;
 } 
 
-.fugure-header p{
+.figure-header p{
     align-self: center;
 }
 
@@ -82,7 +82,7 @@ section figure {
 }
 
 .figure-header img {
-    max-width: 70%;
+    max-width: 20%;
     border-radius: 50%;
 }
 
